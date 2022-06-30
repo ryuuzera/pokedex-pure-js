@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,700,900);
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5f786d97263939.5ec14858dc572.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font: 14px/20px "Poppins", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+}
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+} 
+.wrapper:focus{
+  outline: 0;
+}
+
+.poke-search{
+  background: #e0e0e0;
+  display: inline-block;
+  margin: auto;  
+  text-align: center;
+  font-size: 16px; 
+  border: none;
+  padding: 7px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.search-button{
+  display: inline-block;
+  margin: auto;  
+  text-align: center;
+  font-size: 16px;  
+  border: none;
+  padding: 4px;
+  margin: 5px; 
+  width: 75px;
+  color:rgb(221, 221, 221);
+  background-color: #bd442f;
+  border-radius: 8px;
+}
+.poke-card {
+  background: rgb(221, 221, 221);
+  width: 400px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 14px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.poke-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.poke-card__image--barbarian {
+  background: rgb(255,120,17);
+  background: linear-gradient(90deg, rgba(255,120,17,1) 0%, rgba(251,55,79,1) 35%, rgba(255,209,0,1) 100%);
+  
+}
+.poke-card__image--barbarian img {
+    width: 300px;
+    position: absolute;    
+    top: -65px;
+    left: 55px;
+}
+
+.poke-card__level {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.poke-card__level--barbarian {
+  color:  #EC9B3B;
+}
+
+
+.poke-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 4px;
+}
+
+.poke-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+}
+
+.poke-card__unit-types {
+  padding: 10px;  
+  font-size: 16px;
+}
+
+.poke-card__unit-stats--barbarian {
+  background:  #EC9B3B;
+  
+  
+}
+.poke-card__unit-stats--barbarian{
+    border-right: 1px solid #BD7C2F;
+}
+canvas{
+  margin: 0px 25px 0px 15px
+}
+.poke-card__unit-stats {
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.poke-card__unit-stats  sup {
+    position: absolute;
+    bottom: 4px; 
+    font-size: 45%;
+    margin-left: 2px;
+  }
+  
+  .poke-card__unit-stats  .stat {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .poke-card__unit-stats  .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .poke-card__unit-stats  .no-border {
+    border-right: none;
+  }
+
+.poke-card__unit-stats .one-third{
+  width: 33%;
+    float: left;
+    padding: 20px 15px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
